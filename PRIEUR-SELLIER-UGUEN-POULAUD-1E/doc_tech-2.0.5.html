@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DOC_TECHNIQUE.css">
+    <title>Document Technique</title>
+</head>
+<body>
+    <header>
+                <h1 class="head">Documentation Technique d'une Machine à courber les bananes </h1>
+        <h2 class="head">Bonjour Les Génies du Ponant </h2>
+        <h3 class="head">Le produit est la version 2.0.5</h3>
+    </header>
+    <main>
+                <section class="code-source">
+                        <h3>Documentation du fichier src1.c </h3>
+            <hr>
+            <h2>Programme</h2>
+            <p>   Ce programme en C illustre la gestion de données liées aux étudiants et aux cours. Il utilise des structures pour représenter un étudiant et un cours, avec des fonctions pour afficher les détails de chaque entité. Deux variables globales suivent le nombre total d'étudiants et de cours, tandis que des constantes définissent les tailles maximales des tableaux. Les détails des étudiants et des cours sont ensuite affichés dans la fonction principale. </p>
+
+            <section>
+                <h4>Référence</h4>
+                <p>#include &lt;stdio.h&gt;</p>            </section>
+
+            <h4>Macro</h4><p>#define MAX_STUDENTS 100 </p><p>#define MAX_COURSES 50   </p>
+            <h4>Fonctions</h4>
+            <h5>int main()</h5><p class="commentaire">Programme principal</p><h5>void displayStudent(struct Student s)</h5><p class="commentaire">Affiche le nom de l'étudiant et son âge avec retour à la ligne après chaque info</p><h5>void displayCourse(struct Course c)</h5><p class="commentaire">Affiche le nom du cours et le nombre d'heure correspondant, avec un retour à la ligne après chaque info</p>        
+            <section class="variable">
+                <h4>Variables Globales</h4>
+                <article>
+                    <h5>int totalStudents = 0</h5><div class="commentaire">Nombre total d'étudiants</div><h5>int totalCourses = 0</h5><div class="commentaire">Nombre total de cours</div>                </article>
+            </section>
+            <section class="structure">
+                
+                <h4>Structures</h4><article><h5>Structure Student</h5><div class="commentaire">Structure d'un étudiant</div><table>
+                                <thead>
+                                    <tr>
+                                        <th>Champ(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>    char name[50]</td>
+                                            <td>Nom de l'étudiant</td>
+                                        </tr><tr>
+                                            <td>    int age</td>
+                                            <td>Âge de l'étudiant</td>
+                                        </tr></tbody>
+                            </table> <br><h5>Structure Course</h5><div class="commentaire">Structure d'un cours</div><table>
+                                <thead>
+                                    <tr>
+                                        <th>Champ(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>    char courseName[50]</td>
+                                            <td>Nom du cours</td>
+                                        </tr><tr>
+                                            <td>    int heure</td>
+                                            <td>Nombre dheure du cours</td>
+                                        </tr></tbody>
+                            </table> <br></article>            </section>  
+            <hr>
+            
+            <h3>Description détaillée</h3><h4>Documentation des Macros</h4><h5>#define MAX_STUDENTS 100 </h5><div class="commentaire">Nombre maximal d'étudiants</div><h5>#define MAX_COURSES 50   </h5><div class="commentaire">Nombre maximal de cours</div>            <h4>Documentation des fonctions</h4>
+            <article>
+                <h5>int main()</h5><p class="commentaire">Programme principal</p><h6>Renvoie</h6>
+                            <p class="renvoie">0 si le programme s'exécute avec succès</p> <br><h5>void displayStudent(struct Student s)</h5><p class="commentaire">Affiche le nom de l'étudiant et son âge avec retour à la ligne après chaque info</p><h6>Paramètres</h6><table>
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>s</td>
+                                            <td>Structure représentant un étudiant</td>
+                                        </tr></tbody>
+                            </table> <br><h5>void displayCourse(struct Course c)</h5><p class="commentaire">Affiche le nom du cours et le nombre d'heure correspondant, avec un retour à la ligne après chaque info</p><h6>Paramètres</h6><table>
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>c</td>
+                                            <td>Structure représentant un cours</td>
+                                        </tr></tbody>
+                            </table> <br>            </article>
+        </section>
+                <section class="code-source">
+                        <h3>Documentation du fichier src2.c </h3>
+            <hr>
+            <h2>Programme</h2>
+            <p>   Ce programme crée une structure de données représentant une personne avec un nom, un âge et une adresse, ainsi qu'une structure représentant une adresse avec une rue et un code postal. Deux variables globales sont créées avec des valeurs initiales, et deux fonctions sont définies pour afficher les informations d'une personne et d'une adresse. Enfin, le programme principal utilise ces fonctions pour afficher les informations des variables globales. </p>
+
+            <section>
+                <h4>Référence</h4>
+                <p>#include &lt;stdio.h&gt;</p>            </section>
+
+            <h4>Macro</h4><p>#define MAX_CHAR 50</p><p>#define MAX_ADRESSES 100</p>
+            <h4>Fonctions</h4>
+            <h5>void afficherPersonne(TypePersonne personne)</h5><p class="commentaire">Affiche les informations d'une personne.</p><h5>void afficherAdresse(TypeAdresse adresse)</h5><p class="commentaire">Affiche les informations d'une adresse.</p>        
+            <section class="variable">
+                <h4>Variables Globales</h4>
+                <article>
+                    <h5>int personnesTotal = 0</h5><div class="commentaire">Nombre total de personnes</div><h5>int adressesTotal = 0</h5><div class="commentaire">Nombres total d'adresses</div>                </article>
+            </section>
+            <section class="structure">
+                
+                <h4>Structures</h4><article><h5>Structure Adresse</h5><div class="commentaire">Structure représentant une adresse.</div><table>
+                                <thead>
+                                    <tr>
+                                        <th>Champ(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>    char rue[MAX_CHAR]</td>
+                                            <td>Rue de l'adresse. </td>
+                                        </tr><tr>
+                                            <td>    int codePostal</td>
+                                            <td>Code postal de l'adresse. </td>
+                                        </tr></tbody>
+                            </table> <br><h5>Structure Personne</h5><div class="commentaire">Structure représentant une personne avec un nom, un âge et une adresse.</div><table>
+                                <thead>
+                                    <tr>
+                                        <th>Champ(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>    char nom[MAX_CHAR]</td>
+                                            <td>Nom de la personne. </td>
+                                        </tr><tr>
+                                            <td>    int age</td>
+                                            <td>Âge de la personne. </td>
+                                        </tr><tr>
+                                            <td>    struct Adresse adresse</td>
+                                            <td>Adresse de la personne. </td>
+                                        </tr></tbody>
+                            </table> <br></article>            </section>  
+            <hr>
+            
+            <h3>Description détaillée</h3><h4>Documentation des Macros</h4><h5>#define MAX_CHAR 50</h5><h5>#define MAX_ADRESSES 100</h5>            <h4>Documentation des fonctions</h4>
+            <article>
+                <h5>void afficherPersonne(TypePersonne personne)</h5><p class="commentaire">Affiche les informations d'une personne.</p><h6>Paramètres</h6><table>
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>personne</td>
+                                            <td>La personne dont les informations seront affichées.</td>
+                                        </tr></tbody>
+                            </table> <br><h5>void afficherAdresse(TypeAdresse adresse)</h5><p class="commentaire">Affiche les informations d'une adresse.</p><h6>Paramètres</h6><table>
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>adresse</td>
+                                            <td>L'adresse dont les informations seront affichées.</td>
+                                        </tr></tbody>
+                            </table> <br>            </article>
+        </section>
+                <section class="code-source">
+                        <h3>Documentation du fichier src3.c </h3>
+            <hr>
+            <h2>Programme</h2>
+            <p>   Ce programme calcule la quantité de pollution émise par deux carburants en entrant la quantité en litres </p>
+
+            <section>
+                <h4>Référence</h4>
+                <p>#include &lt;stdio.h&gt;</p><p>#include &lt;stdlib.h&gt;</p>            </section>
+
+            <h4>Macro</h4><p>#define MAX_QUANTITE_1 1000 </p><p>#define MAX_QUANTITE_2 800  </p>
+            <h4>Fonctions</h4>
+            <h5>int main()</h5><p class="commentaire">Demande d'entrer la consommation des deux carburants puis affiche le résultat.</p><h5>float pourcentagePollutionCarburant1(float quantiteCarburant1)</h5><p class="commentaire">Cette fonction calcule la pollution de l'essence, et retourne une valeur, en kg/CO2</p><h5>float pourcentagePollutionCarburant2(float quantiteCarburant2)</h5><p class="commentaire">Cette fonction calcule la pollution du diesel, et retourne une valeur, en kg/CO2</p>        
+            <section class="variable">
+                <h4>Variables Globales</h4>
+                <article>
+                    <h5>float pollutionCarburant1 = 2.3</h5><div class="commentaire"> Pourcentage de pollution par litre d'essence </div><h5>float pollutionCarburant2 =  2.67</h5><div class="commentaire"> Pourcentage de pollution par litre de diesel </div>                </article>
+            </section>
+            <section class="structure">
+                
+                <h4>Structures</h4><article><h5>Structure Carburant1</h5><div class="commentaire">Structure du carburant1</div><table>
+                                <thead>
+                                    <tr>
+                                        <th>Champ(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>    float quantite</td>
+                                            <td>Quantité du carburant 1 </td>
+                                        </tr><tr>
+                                            <td>    float pourcentagePollution</td>
+                                            <td>Le pourcentage de pollution du carburant 1 </td>
+                                        </tr></tbody>
+                            </table> <br><h5>Structure Carburant2</h5><div class="commentaire">Structure du carburant2</div><table>
+                                <thead>
+                                    <tr>
+                                        <th>Champ(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>    float quantite</td>
+                                            <td>Quantité du carburant 2 </td>
+                                        </tr><tr>
+                                            <td>    float pourcentagePollution</td>
+                                            <td>Le pourcentage de pollution du carburant 2 </td>
+                                        </tr></tbody>
+                            </table> <br></article>            </section>  
+            <hr>
+            
+            <h3>Description détaillée</h3><h4>Documentation des Macros</h4><h5>#define MAX_QUANTITE_1 1000 </h5><div class="commentaire"> Quantité maximale pour l'essence </div><h5>#define MAX_QUANTITE_2 800  </h5><div class="commentaire"> Quantité maximale pour le diesel </div>            <h4>Documentation des fonctions</h4>
+            <article>
+                <h5>int main()</h5><p class="commentaire">Demande d'entrer la consommation des deux carburants puis affiche le résultat.</p><h6>Renvoie</h6>
+                            <p class="renvoie">EXIT_SUCCESS si le programme s'effectue correctement.</p> <br><h5>float pourcentagePollutionCarburant1(float quantiteCarburant1)</h5><p class="commentaire">Cette fonction calcule la pollution de l'essence, et retourne une valeur, en kg/CO2</p><h6>Paramètres</h6><table>
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>quantiteCarburant1</td>
+                                            <td>Quantité du carburant 1 consommée.</td>
+                                        </tr></tbody>
+                            </table> <br><h6>Renvoie</h6>
+                            <p class="renvoie">Le pourcentage de pollution en kg/CO2.</p> <br><h5>float pourcentagePollutionCarburant2(float quantiteCarburant2)</h5><p class="commentaire">Cette fonction calcule la pollution du diesel, et retourne une valeur, en kg/CO2</p><h6>Paramètres</h6><table>
+                                <thead>
+                                    <tr>
+                                        <th>Paramètre(s)</th>
+                                        <th>Rôle</th>
+                                    </tr>
+                                </thead>
+                                <tbody><tr>
+                                            <td>quantiteCarburant2</td>
+                                            <td>Quantité du carburant 2 consommée.</td>
+                                        </tr></tbody>
+                            </table> <br><h6>Renvoie</h6>
+                            <p class="renvoie">Le pourcentage de pollution en kg/CO2.</p> <br>            </article>
+        </section>
+            </main>
+</body>
+</html>

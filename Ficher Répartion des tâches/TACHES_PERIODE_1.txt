@@ -1,0 +1,21 @@
+Répartion des liste des Tâches 
+
+Création des 3 fichiers C 
+- src1.c Maël Sellier 100%
+- src2.c Antoine Prieur 20% Maël Sellier 80%
+- src3.c Younis Poulaud 100%
+plus relecture des 3 fichier de Maël Sellier 100%
+
+Documentation Technique en format HTML 
+- DOC_TECHNIQUE.html Quentin Uguen 95% 
+                     Younis Poulaud 5%
+
+Documentation Technique en format Markdown
+- DOC_UTILISATEUR.md Antoine Prieur 100%
+
+Création Manuelle d'un ficher Markdown en html
+- DOC_UTILISATEUR.html Maël Sellier 85% 
+                       Younis Poulaud 15%
+
+Liste des Tâches réaliser et la Répartion du Travail individuel 
+- TACHES_PERIODE_1.txt Younis Poulaud 100% 

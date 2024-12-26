@@ -1,0 +1,15 @@
+Répartion des liste des Tâches 
+
+Documentation Technique en format PHP
+- gendoc-tech.php Maël Sellier 100%
+
+Documentation Utilisateur en format PHP
+- gendoc-user.php Maël Sellier 50%
+                  Antoine Prieur 50%
+
+Script Bash 
+- sae103.bash Quentin Uguen 50%
+              Antoine Prieur 50%
+
+Liste des Tâches réaliser et la Répartion du Travail individuel 
+- TACHES_PERIODE_2.txt Younis Poulaud 100% 
